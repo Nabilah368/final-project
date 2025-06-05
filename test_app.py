@@ -20,7 +20,7 @@ class TranslationService:
             
 self.headers = {
     "Authorization": f"Bearer {api_key}",
-    "HTTP-Referer": "https://final-project-text-image-translate.streamlit.app/",  # atau domain kamu saat deploy
+    "HTTP-Referer": "http://localhost:8501",  # atau domain kamu saat deploy
     "X-Title": "AI Document Translator",
     "Content-Type": "application/json"
 }
