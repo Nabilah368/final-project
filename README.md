@@ -1,5 +1,1 @@
-streamlit
-requests
-pillow
-torch
-torchvision
+text in image translation app
