@@ -98,7 +98,7 @@ class HistoryManager:
 class TranslatorApp:
     def __init__(self):
         self.translator = TranslationService(
-            api_key="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",
+            api_key="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",
             model="meta-llama/llama-4-maverick",  # Model yang mendukung analisis gambar
             api_url="https://openrouter.ai/api/v1/chat/completions"
         )
