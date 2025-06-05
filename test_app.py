@@ -6,8 +6,6 @@ import os
 from PIL import Image
 import io
 
-api_key="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"
-
 class TranslationService:
     def __init__(self, api_key, model, api_url):
         # OpenRouter credentials for translation
@@ -100,6 +98,7 @@ class HistoryManager:
 class TranslatorApp:
     def __init__(self):
         self.translator = TranslationService(
+            api_key="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",
             model="meta-llama/llama-4-maverick",  # Model yang mendukung analisis gambar
             api_url="https://openrouter.ai/api/v1/chat/completions"
         )
