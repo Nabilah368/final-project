@@ -100,7 +100,7 @@ class TranslatorApp:
         self.translator = TranslationService(
             api_key="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",
             model="qwen/qwen2.5-vl-32b-instruct",  # Model yang mendukung analisis gambar
-            api_url="https://openrouter.ai/api/v1/chat/completions"
+            api_url="https://openrouter.ai/api/v1"
         )
         self.history_manager = HistoryManager()
 
