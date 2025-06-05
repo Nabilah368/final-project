@@ -98,7 +98,7 @@ class HistoryManager:
 class TranslatorApp:
     def __init__(self):
         self.translator = TranslationService(
-            api_key="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",
+            api_key="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",
             model="qwen/qwen2.5-vl-32b-instruct",  # Model yang mendukung analisis gambar
             api_url="https://openrouter.ai/api/v1"
         )
