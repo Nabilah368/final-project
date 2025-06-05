@@ -18,7 +18,7 @@ class TranslationService:
             # Convert image bytes to base64
             base64_image = base64.b64encode(image_bytes).decode('utf-8')
             
-self.headers = {
+headers = {
     "Authorization": f"Bearer {api_key}",
     "HTTP-Referer": "http://localhost:8501",  # atau domain kamu saat deploy
     "X-Title": "AI Document Translator",
