@@ -20,6 +20,8 @@ class TranslationService:
             
             headers = {
                 "Authorization": f"Bearer {self.translator_key}",
+                "HTTP-Referer": "https://final-project-text-image-translate.streamlit.app",  # atau domain kamu saat deploy
+                "X-Title": "AI Document Translator",
                 "Content-Type": "application/json"
             }
             
@@ -96,9 +98,9 @@ class HistoryManager:
 class TranslatorApp:
     def __init__(self):
         self.translator = TranslationService(
-            api_key="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",
+            api_key="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",
             model="meta-llama/llama-4-maverick",  # Model yang mendukung analisis gambar
-            api_url="https://openrouter.ai/api/v1/chat/completions"
+            api_url="https://openrouter.ai/api/v1"
         )
         self.history_manager = HistoryManager()
 
